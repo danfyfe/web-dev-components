@@ -2,18 +2,40 @@
   "name": "web-dev-components",
   "version": "1.0.0",
   "description": "A component library full of simple UI components for basic web experiences",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/danfyfe/web-dev-components.git"
+    "url": "https://github.com/danfyfe/web-dev-components/"
   },
   "author": "Dan Fyfe",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danfyfe/web-dev-components/issues"
   },
-  "homepage": "https://github.com/danfyfe/web-dev-components#readme"
+  "homepage": "https://github.com/danfyfe/web-dev-components#readme",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.0",
+    "@storybook/addon-essentials": "^8.1.11",
+    "@storybook/addon-interactions": "^8.1.11",
+    "@storybook/addon-links": "^8.1.11",
+    "@storybook/addon-onboarding": "^8.1.11",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.4",
+    "@storybook/blocks": "^8.1.11",
+    "@storybook/react": "^8.1.11",
+    "@storybook/react-webpack5": "^8.1.11",
+    "@storybook/test": "^8.1.11",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "storybook": "^8.1.11"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
 }
