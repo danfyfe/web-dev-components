@@ -1,1 +1,5 @@
-export { SkipToMainContent } from './components/a11y/skip-to-main-content';
+import { SkipToMainContent } from './components/a11y/skip-to-main-content';
+
+export {
+  SkipToMainContent
+}

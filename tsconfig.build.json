@@ -1,10 +1,17 @@
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "lib",
-    "noEmit": false,
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "target": "ES6",
+    "module": "CommonJS",
     "declaration": true,
-    "emitDeclarationOnly": true
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx"
   },
-  "exclude": ["node_modules", "src/**/*.stories.tsx", "src/**/*.test.tsx"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts"]
 }
