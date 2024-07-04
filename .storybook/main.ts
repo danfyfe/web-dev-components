@@ -1,4 +1,6 @@
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
+import path from 'path';
+
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
