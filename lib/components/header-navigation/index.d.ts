@@ -3,8 +3,8 @@ export interface LogoProps {
     alt: string;
     href?: string;
     label?: string;
-    height?: number;
-    width?: number;
+    height: number;
+    width: number;
 }
 export interface NavigationItem {
     text: string;
