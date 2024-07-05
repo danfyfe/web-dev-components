@@ -12,8 +12,8 @@ const Template: StoryFn<HeaderNavigationProps> = (args) => <HeaderNavigation {..
 export const Default = Template.bind({});
 Default.args = {
   logo: {
-    src: '',
-    alt: ''
+    src: './assets/youtube.svg',
+    alt: 'YouTube Logo'
   },
   navigationItems: [
     {
