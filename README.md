@@ -46,10 +46,24 @@ This is built using React, Tailwind and Storybook.
   <summary><span>MainContainer</span></summary>
   <div style="margin-left: 20px;">
   <p><b>Overview</b></p>
-  <p>Provides a `main` HTML element for use at the base page level. The element's ID is hardcoded to work with the `SkipToMainContent` component. It has a set max width that aligns with the `HeaderNavigation` component.</p>
+  <p>Provides a `main` HTML element for use at the base page level. The element's ID is hardcoded to work with the `SkipToMainContent` component.</p>
 
   <p><b>Params</b></p>
 
+  - `children`: children elements
+  - `className`: allows for additional styling via Tailwind
+  </div>
+</details>
+
+<details>
+  <summary><span>SectionContainer</span></summary>
+  <div style="margin-left: 20px;">
+  <p><b>Overview</b></p>
+  <p>Provides a `section` HTML element for structure while building out reusable components.</p>
+
+  <p><b>Params</b></p>
+
+  - `id`: id for section element
   - `children`: children elements
   - `className`: allows for additional styling via Tailwind
   </div>
