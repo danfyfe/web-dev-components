@@ -10,6 +10,7 @@ const Template: StoryFn<SectionContainerProps> = (args) => <SectionContainer {..
 
 export const ClassName = Template.bind({});
 ClassName.args = {
+  id:'section-01',
   className: 'text-red-500 text-xl',
   children: <>
     <h1>Heading</h1>
