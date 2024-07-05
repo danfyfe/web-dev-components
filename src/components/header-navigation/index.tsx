@@ -24,11 +24,13 @@ export interface HeaderNavigationProps {
 
 
 export const HeaderNavigation = ({ navigationItems, logo }: HeaderNavigationProps) => {
-  <header className="w-full shadow-md">
-    <nav className="max-w-7xl h-20 w-full m-auto p-6 flex justify-between">
-      <Logo logo={logo} />
-      <DesktopNavigation navigationItems={navigationItems} />
-      <MobileNavigation navigationItems={navigationItems} />
-    </nav>
-  </header>
+  return (
+    <header className="w-full shadow-md">
+      <nav className="max-w-7xl h-20 w-full m-auto p-6 flex justify-between">
+        <Logo logo={logo} />
+        <DesktopNavigation navigationItems={navigationItems} />
+        <MobileNavigation navigationItems={navigationItems} />
+      </nav>
+    </header>
+  )
 };
