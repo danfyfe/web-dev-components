@@ -1,11 +1,12 @@
 import React from "react";
 
 export interface MainContainerProps {
-  children: React.ReactNode
+  children: React.ReactNode;
+  className?: string;
 }
 
-export const MainContainer = ({ children }: MainContainerProps) => (
-  <main id="main-content" className="max-w-7xl">
+export const MainContainer = ({ children, className }: MainContainerProps) => (
+  <main id="main-content" className={`max-w-7xl ${className ? className : ''}`}>
     { children }
   </main>
 );
