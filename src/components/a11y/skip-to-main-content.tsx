@@ -6,5 +6,5 @@ export interface SkipToMainContentProps {
 }
 
 export const SkipToMainContent = ({ id, className }: SkipToMainContentProps) =>
-  <a href={`#${id}`} className={`absolute top-0 -left-[99999px] focus-visible:left-5 ${className ? className : ''}`}>Skip to main content</a>;
+  <a href='#main-content' className={`absolute top-0 -left-[99999px] focus-visible:left-5 ${className ? className : ''}`}>Skip to main content</a>;
 

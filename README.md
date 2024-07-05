@@ -17,7 +17,6 @@ This is built using React, Tailwind and Storybook.
 
   <p><b>Params</b></p>
 
-  - `id`: the `id` should align with the id on the `main` HTML element on the page. The prop is used in the anchor component to scroll the page down to the `main` element when activated.
   - `className`: incorporates additional styling via Tailwind.
   </div>
 </details>
