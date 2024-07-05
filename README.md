@@ -21,3 +21,23 @@ This is built using React, Tailwind and Storybook.
   - `className`: incorporates additional styling via Tailwind.
   </div>
 </details>
+
+## header-navigation
+<details>
+  <summary><span>HeaderNavigation</span></summary>
+  <div style="margin-left: 20px;">
+  <p><b>Overview</b></p>
+  <p>This component provides a basic header and navigation functionality with a dropdown on mobile</p>
+
+  <p><b>Params</b></p>
+
+  - `logo`: an object used to supply image data to the logo component
+    - `src`: image source attribute
+    - `alt`: image alt attribute
+    - `height`: image height attribute
+    - `width`: image width attribute
+  - `navigationItems`: an array of objects used to render the navigation links.
+    - `text`: link text-content
+    - `href`: link href attribute
+  </div>
+</details>
