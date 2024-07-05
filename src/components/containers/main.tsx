@@ -6,7 +6,7 @@ export interface MainContainerProps {
 }
 
 export const MainContainer = ({ children, className }: MainContainerProps) => (
-  <main id="main-content" className={`max-w-7xl ${className ? className : ''}`}>
+  <main id="main-content" className={`min-h-screen ${className ? className : ''}`}>
     { children }
   </main>
 );
