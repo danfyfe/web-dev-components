@@ -2,7 +2,7 @@
   "name": "@dans-coconuts/web-dev-components",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "scripts": {
     "start": "react-scripts start",
     "build": "tsc -p tsconfig.build.json",
@@ -16,18 +16,6 @@
       "react-app",
       "react-app/jest",
       "plugin:storybook/recommended"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   },
   "devDependencies": {
