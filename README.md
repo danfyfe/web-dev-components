@@ -15,7 +15,37 @@ To install this project, use the following command:
 View the library [here](https://www.npmjs.com/package/@dans-coconuts/web-dev-components)
 
 # Tooling
-This is built using React, Tailwind and Storybook.
+This is built using React, Tailwind and Storybook, with more component testing to come.
+
+# Before you start
+This system uses Tailwind extensions via the config file to set certain values.
+
+Below are the current keys in the Tailwind config that are implemented in components.
+
+Each value is representative of its use and should be pretty straightforward.
+
+For example, the H1 component uses the text-h1 font-heading Tailwind classes, updating these values will change all H1 styling, unless locally overridden.
+
+```
+  theme: {
+    extend: {
+      fontFamily: {
+        heading: 'Arial, Helvetica, sans-serif;',
+        subheading: 'Times New Roman, Helvetica, sans-serif;',
+        paragraph: 'Arial, Helvetica, sans-serif;'
+      },
+      fontSize: {
+        h1: '2.5rem',
+        h2: '2rem',
+        h3: '1.75rem',
+        h4: '1.5rem',
+        h5: '1.25rem',
+        h6: '1rem',
+        link: '1rem',
+        paragraph: '1rem',
+      }
+    }
+```
 
 # Components
 ## a11y

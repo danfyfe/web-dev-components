@@ -14,8 +14,8 @@ module.exports = {
         text: '#444'
       },
       fontFamily: {
-        heading: '',
-        subheading: '',
+        heading: 'Arial, Helvetica, sans-serif;',
+        subheading: 'Times New Roman, Helvetica, sans-serif;',
         paragraph: 'Arial, Helvetica, sans-serif;'
       },
       fontSize: {
