@@ -4,6 +4,16 @@ This repo is a learning project for creating UI components. The idea is to have 
 
 This is a WIP, components will be added here as they are introduced.
 
+
+# Installation
+To install this project, use the following command:
+
+```
+  npm install @dans-coconuts/web-dev-components
+```
+
+View the library [here](https://www.npmjs.com/package/@dans-coconuts/web-dev-components)
+
 # Tooling
 This is built using React, Tailwind and Storybook.
 
