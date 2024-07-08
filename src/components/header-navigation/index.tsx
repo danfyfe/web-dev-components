@@ -12,7 +12,7 @@ export interface LogoProps {
   width: number;
 };
 
-export interface NavigationItem {
+export interface NavigationItem extends React.ComponentProps<'a'>{
   text: string;
   href: string;
 };

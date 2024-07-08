@@ -1,20 +1,21 @@
 import React from "react";
 import { MouseEventHandler } from "react";
 
-export interface NavigationLinkProps {
+export interface NavigationLinkProps extends React.ComponentProps<'a'> {
   text: string;
   href: string;
   className?: string;
   onClick?: MouseEventHandler<HTMLAnchorElement>
 }
 
-export const NavigationLink = ({ text, href, className, onClick }: NavigationLinkProps) => {
+export const NavigationLink = ({ text, href, className, onClick, ...props }: NavigationLinkProps) => {
   return (
     <li className={`
       border-b-2 border-b-transparent hover:border-b-black flex justify-center items-center
+      text-link
       ${className ? className : ''}
     `}>
-      <a href={href} onClick={onClick}>
+      <a {...props} href={href} onClick={onClick}>
         {text}
       </a>
     </li>
