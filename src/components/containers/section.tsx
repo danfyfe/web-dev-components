@@ -1,13 +1,11 @@
 import React from "react";
 
-export interface SectionContainerProps {
-  children: React.ReactNode;
-  id?: string;
-  className?: string;
+export interface SectionContainerProps extends React.ComponentProps<'section'> {
+
 };
 
-export const SectionContainer = ({ children, className, id }: SectionContainerProps) => (
-  <section id={id ? id : undefined} className={className ? className : ''}>
+export const SectionContainer = ({  children, className, ...props }: SectionContainerProps) => (
+  <section {...props} className={className ? className : ''}>
     {children}
   </section>
 );
