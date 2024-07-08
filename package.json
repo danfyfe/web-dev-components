@@ -2,7 +2,7 @@
   "name": "@dans-coconuts/web-dev-components",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "scripts": {
     "start": "react-scripts start",
     "build": "tsc -p tsconfig.build.json",
@@ -44,6 +44,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "prop-types": "^15.8.1",
     "storybook": "^8.1.11",
+    "typescript": "^5.5.3",
     "webpack": "^5.92.1"
   },
   "peerDependencies": {
