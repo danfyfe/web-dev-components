@@ -1,3 +1,4 @@
+import React from "react";
 export interface LogoProps {
     src: string;
     alt: string;
@@ -6,7 +7,7 @@ export interface LogoProps {
     height: number;
     width: number;
 }
-export interface NavigationItem {
+export interface NavigationItem extends React.ComponentProps<'a'> {
     text: string;
     href: string;
 }
