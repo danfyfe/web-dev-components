@@ -9,5 +9,6 @@ import { H4 } from './components/typography/H4';
 import { H5 } from './components/typography/H5';
 import { H6 } from './components/typography/H6';
 import { P } from './components/typography/P';
-export { SkipToMainContent, HeaderNavigation, MainContainer, SectionContainer, H1, H2, H3, H4, H5, H6, P };
+import { Button } from './components/utils/Button';
+export { SkipToMainContent, HeaderNavigation, MainContainer, SectionContainer, H1, H2, H3, H4, H5, H6, P, Button };
 //# sourceMappingURL=index.d.ts.map
