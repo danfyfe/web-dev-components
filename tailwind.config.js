@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#89CFF0',
+        primary: '#1f85b5',
         secondary: '#808080',
         tertiary: '#6082B6',
         success: '#00A36C',
@@ -27,6 +27,11 @@ module.exports = {
         h6: '1rem',
         link: '1rem',
         paragraph: '1rem',
+      },
+      borderRadius: {
+        // common practice is to have a child element's border-radius be half of the container's
+        outer: '0.5rem',
+        inner: '0.25rem'
       }
     },
   },
