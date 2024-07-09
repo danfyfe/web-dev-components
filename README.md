@@ -26,9 +26,16 @@ Each value is representative of its use and should be pretty straightforward.
 
 For example, the H1 component uses the text-h1 font-heading Tailwind classes, updating these values will change all H1 styling, unless locally overridden.
 
+Other keys are applied to elements to help fit a larger design principle.
+
+For example, borderRadius has an outer and inner key, which can be set if using a ratio for parent and child elements.
+
 ```
   theme: {
     extend: {
+      colors: {
+        primary: '#1f85b5'
+      },
       fontFamily: {
         heading: 'Arial, Helvetica, sans-serif;',
         subheading: 'Times New Roman, Helvetica, sans-serif;',
@@ -43,9 +50,16 @@ For example, the H1 component uses the text-h1 font-heading Tailwind classes, up
         h6: '1rem',
         link: '1rem',
         paragraph: '1rem',
+      },
+      borderRadius: {
+        // common practice is to have a child element's border-radius be half of the container's
+        outer: '0.5rem',
+        inner: '0.25rem'
       }
     }
 ```
+
+All components extend existing types for their returned HTML element. The params described below are used in extra rendering logic.
 
 # Components
 ## a11y
@@ -109,15 +123,32 @@ For example, the H1 component uses the text-h1 font-heading Tailwind classes, up
   </div>
 </details>
 
+## typography
 <details>
-  <summary><span>Typography</span></summary>
+  <summary><span>Headings and Paragraphs</span></summary>
   <div style="margin-left: 20px;">
   <p><b>Overview</b></p>
-  <p>Provides a `section` HTML element for structure while building out reusable components.</p>
+  <p>Provides `heading 1-6` and `paragraph` HTML elements for typography use.</p>
 
   <p><b>Params</b></p>
 
-  - `id`: id for section element
+  - `children`: children elements
+  - `className`: allows for additional styling via Tailwind
+  </div>
+</details>
+
+## utility
+<details>
+  <summary><span>Button</span></summary>
+  <div style="margin-left: 20px;">
+  <p><b>Overview</b></p>
+  <p>Provides a button component.</p>
+
+  <p><b>Params</b></p>
+
+  - `inverted`: boolean that switches primary color usage within the button
+  - `disabled`: boolean that switches styling to make button appear as a link
+  - `asLink`: boolean that removes generic button styling (border, etc)
   - `children`: children elements
   - `className`: allows for additional styling via Tailwind
   </div>
