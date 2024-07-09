@@ -9,6 +9,7 @@ import { H4 } from './components/typography/H4';
 import { H5 } from './components/typography/H5';
 import { H6 } from './components/typography/H6';
 import { P } from './components/typography/P';
+import { Button } from './components/utils/Button';
 
 
 export {
@@ -22,5 +23,6 @@ export {
   H4,
   H5,
   H6,
-  P
+  P,
+  Button
 };

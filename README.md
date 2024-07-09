@@ -108,3 +108,17 @@ For example, the H1 component uses the text-h1 font-heading Tailwind classes, up
   - `className`: allows for additional styling via Tailwind
   </div>
 </details>
+
+<details>
+  <summary><span>Typography</span></summary>
+  <div style="margin-left: 20px;">
+  <p><b>Overview</b></p>
+  <p>Provides a `section` HTML element for structure while building out reusable components.</p>
+
+  <p><b>Params</b></p>
+
+  - `id`: id for section element
+  - `children`: children elements
+  - `className`: allows for additional styling via Tailwind
+  </div>
+</details>
