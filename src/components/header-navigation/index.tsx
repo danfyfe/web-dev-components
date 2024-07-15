@@ -25,8 +25,8 @@ export interface HeaderNavigationProps {
 
 export const HeaderNavigation = ({ navigationItems, logo }: HeaderNavigationProps) => {
   return (
-    <header className="w-full shadow-md">
-      <nav className="max-w-7xl h-20 w-full m-auto p-6 flex justify-between">
+    <header className="w-full shadow-md sticky">
+      <nav className="max-w-7xl h-20 w-full m-auto p-6 flex justify-between relative">
         <Logo logo={logo} />
         <DesktopNavigation navigationItems={navigationItems} />
         <MobileNavigation navigationItems={navigationItems} />
