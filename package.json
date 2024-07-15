@@ -2,7 +2,7 @@
   "name": "@dans-coconuts/web-dev-components",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "scripts": {
     "start": "react-scripts start",
     "build": "tsc -p tsconfig.build.json",
